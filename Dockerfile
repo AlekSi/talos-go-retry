@@ -7,7 +7,7 @@
 ARG TOOLCHAIN
 
 # runs markdownlint
-FROM node:14.8.0-alpine AS lint-markdown
+FROM node:16.5.0-alpine AS lint-markdown
 RUN npm i -g markdownlint-cli@0.23.2
 RUN npm i sentences-per-line@0.2.1
 WORKDIR /src
